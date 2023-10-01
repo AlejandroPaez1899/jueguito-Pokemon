@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>¡Pokémon Chafa Version!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='PokeStyle.css'>
+    
+</head>
+    
+    <section id = "mascota">  
+        <h1 class="title">¡A COMBATIR!</h1>
+
+        <h2 class="subtitle"  id="subtitulo"> Elige a tu Pokémon </h2>
+        
+    <div id="ChoosePkmn">
+        
+        <input type="radio" name="Pokémon" id="Totodile">
+        <label class="tarjeta-de-pokemon" for="Totodile" id="labelTotodile">
+            <img src="totodile.png" alt="Imagen de Totodile" width="70"> Totodile   
+        </label>
+        
+        <input type="radio" name="Pokémon" id="Chikorita">
+        <label class="tarjeta-de-pokemon" for="Chikorita" id="labelChikorita">
+            <img src="chikorita.png" alt="Imagen de Chikorita" width="70"> Chikorita
+        </label>
+        
+        <input type="radio" name="Pokémon" id="Cyndaquil">
+        <label class="tarjeta-de-pokemon" for="Cyndaquil">
+            <img src="cyndaquil.png" alt="Imagen de Cyndaquil" width="70"> Cyndaquil
+        </label>
+    
+    </div>
+
+
+        </p>
+        <button id="boton_pokémon"> Seleccionar </button>
+    </section>
+
+<section id = "ver_mapa">
+    <h1>Recorre el Mapa Pokémon</h1>
+    <canvas id = "mapa"> </canvas>
+
+</section>
+
+
+    <section id = "ataque"> 
+        <h2> Eligue tu ataque </h2>
+
+        
+        <!-- <p> Tu Pokémon <span id = "NombrePokemon">  </span> empieza el combate con  <span id="vida"> 3 </span> puntos de vida </p>
+        <p> El Pokémon <span id = "NombreRival"> </span> rival empieza el combate con <span id="vidaRival"> 3 </span>  puntos de vidas </p> -->
+        
+        <div id="BOTOnes_ATAQUE">
+        <p> <button id="Lanzallamas"> Lanzallamas 🔥</button> </p>
+        <p> <button id="Hoja"> Hoja afilada🍃</button> </p>
+        <p> <button id="Surf"> Surf 🌊</button> </p> 
+        </div>
+    </section>
+
+    <section id = "mensajes"> 
+
+        
+
+        <label class="tarjeta_combate" id="yeye">
+            <span id="imagen_mipokemon"><img src=""> </span>
+            <p>Los Puntos de Vida de tu <span id="NombrePokemon">   </span> son: </p>
+            <span id="puntosVida"> </span>
+        </label>
+
+       
+        
+
+        <label class="tarjeta_combate">
+            <span id="imagen_pokemonrival"><img src="" ></span>
+            <p>Los Puntos de Vida del <span id="NombreRival">   </span> rival son: </p>
+            <span id="puntosRival" class="puntosdelrival"></span>
+            
+        </label>
+        
+    
+    </section>
+    <p></p>
+    <p></p>
+    <section id = "reiniciar">  </section>
+    <button id="boton_reiniciar"> Reiniciar 🔃</button>
+
+<body>
+    
+    <script src='C_de_pokemon.js'></script>
+</body>
+</html>
